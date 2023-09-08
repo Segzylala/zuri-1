@@ -8,7 +8,7 @@ const now = days[date.getDay()-1]
 
 const updateTime = () => {
   const date = new Date()
-  timeUtc.textContent = date.getTime()
+  timeUtc.textContent =date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + ":" + date.getMilliseconds( )
 }
 
 const nowTag = document.getElementById('now')
